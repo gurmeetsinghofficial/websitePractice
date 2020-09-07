@@ -1,0 +1,48 @@
+<html><head><title>Bhatia's Medicos</title>
+<link href="bhatia.css" type="text/css" rel="stylesheet">
+</head>
+
+<body onload="car();">
+	<p id="demo"></p>
+	<script>
+	function car()
+	{
+		var inputTest = localStorage['objectToPass'];
+      
+      alert("welcome");
+      document.getElementById("demo").innerHTML=inputTest;
+      localStorage.removeItem( 'objectToPass' ); // Clear the localStorage
+
+	}
+	</script>
+<header> <h1 align="right"><marquee width="40%" behavior="alternate">Bhatia's Medicos</marquee></h1>
+
+<nav>
+<ul class="main">
+<li><a href="#">Home</a></li>
+<li><a href="#info">About</a></li>
+<li><a href="services.html">services</a></li>
+
+<li><a href="contact.html">contact</a></li>
+</ul>
+</nav></header>
+
+<section  class="one"></section>
+<section class="two" id="info"> <h2 align="center" >About</h2>
+<form align="right" class="vc" >
+<input type="text" placeholder="Full Name" name="full_name" >
+<input type="text" placeholder="Father's Name" name="fathers_name">
+<input type="number" placeholder="Number" name="contact"> 
+<input type="submit" value="Submit" name="submit" >
+</form>
+<div class="about"><h2 align="center"></h2><br><p> bhatia enterprises</p></div>
+</section>
+<section class="three">
+
+</section>
+<section  class="four">
+<iframe align="center" class="video" width="80%" height="650px" src="https://www.youtube.com/embed/EKplZzEPPlY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</section>
+<footer align="center">&copy All Rights Reserved | 2022</footer>
+</body>
+</html>

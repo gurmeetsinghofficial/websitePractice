@@ -1,0 +1,32 @@
+body
+{
+
+}
+table{
+text-align:center;
+font-size:25px;
+}
+.form
+{
+margin:0px 0px 0px 1000px;
+padding:0px 0px 0px 0px;
+}
+.feedback
+{
+  background-color: #0ae0f7;
+    color: #0384fc;
+    width: 775px;
+    height: 479px;
+    margin: -497px 0px 0px 52px;
+    padding: 0px 0px 0px 0px;
+    border-radius: 10px;
+    border-style: outset;
+    border-width: 4px;
+    border-color: #0384fc;
+    box-shadow: 10px 10px 5px #0384fc;
+    background-color: #0ae0f7;
+	}
+	hr 
+	{
+	margin:81px 0px 0px 140px;
+	}

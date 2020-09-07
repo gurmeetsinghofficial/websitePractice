@@ -1,0 +1,147 @@
+<html>
+<head><title>
+form
+</title>
+<style>
+.bn{
+border-radius:50px;
+border-style:inset;
+border-color:red;
+height:30px;
+}
+.bn input[type="text"],.vc input[type="number"]{
+transition:0.25s;
+}
+.bninput[type="text"]:focus,.bn input[type="number"]:focus{
+	width:280px;
+	border-color:#2ecc71;
+}
+.lk{
+border-radius:50px;
+border-style:inset;
+border-color:red;
+height:30px;
+}
+.xc{
+border-radius:50px;
+border-style:inset;
+border-color:red;
+height:30px;
+
+}
+.jk{
+border-radius:50px;
+border-style:inset;
+border-color:red;
+height:30px;
+}
+.we{
+border-radius:50px;
+border-style:inset;
+border-color:red;
+height:30px;
+
+
+}
+.rt{
+border-radius:50px;
+border-style:inset;
+border-color:red;
+height:30px;
+}
+.gh:hover
+{
+background-color:lightgreen;
+border:3px dashed red;
+}
+.yu:hover
+{
+background-color:lightgreen;
+border:3px dashed red;
+
+}
+.ji
+{
+    color:red;
+}
+</style>
+
+
+<link href = "form.css" rel="stylesheet" type="text/css"> </head>
+<body >
+<div class="form">
+<fieldset width="80%" align="right">
+<legend>
+<h2 align="center"> ENQUIRY FORM</h2>
+</legend>
+<form width="80%" align="right" name="val_form" class="ji" action="php.php" method="post">
+<table align="center" cellpadding="10">
+<tr><td>Full Name: </td>
+<td><input type="text" name="full_name" id="demo" maxlength="30"  placeholder="Name" class="bn" ></input></td></tr>
+<tr>
+<td>Mobile No.:</td>
+<td><input type="number" name="number" maxlength="10" minlength="10" placeholder="number" class="lk"></input>
+</td></tr>
+<tr>
+<td>E-mail:</td>
+<td><input type="email" name="email" maxlength="40" placeholder="Email" class="xc" required></input>
+</td></tr><tr><td>Enter Your Query</td>
+<td>
+<textarea class="we" rows="4" cols="30" required></textarea></td></tr>
+<tr><td> sex:</td><td align="left"><input type="radio" name="sex" value="Male"></input>Male<br>
+<input type="radio" name="sex" value="Female"></input>Female
+</td></tr>
+<tr><td>Age:</td><td><input type="number" name="age" placeholder="Age"  maxlength="2" class="jk"></input></td></tr>
+<tr><td>weight:</td><td><input type="number" name="weight" placeholder="weight"  maxlength="2" class="rt"></input></td><td><small>(in Kg)</small></td></tr>
+
+
+
+<tr><td colspan="2" align="center">
+    <input type="submit" name="create" value="Submit" class="gh"></input>
+<input  type="reset" value="Reset" class="yu"></input>
+</td></tr>
+</table></form>
+</fieldset></div>
+<div class="feedback">Enter your ENQUIRY <br>
+Give Us Some Details so that we come to know about you</div>
+<hr width="80%" height="5px" color="black" align="center">
+<p id="demo"></p>
+
+</body>
+<script>
+    var a;
+    function car()
+    {
+        var name=document.forms["val_form"]["full_name"];
+        var mobile=document.forms["val_form"]["number"];
+        var email=document.forms["val_form"]["email"];
+<!--        var regexp=\^[0-9]{2}(?:-[0-9]{10})?$/;-->
+        if(name.value=="")
+        {
+            alert("enter your name");
+            
+            
+            return false;
+        }
+        if(mobile.value=="")
+        {
+            
+            alert("enter your number");
+           
+            return false;
+        }
+        if(email.value=="")
+        {
+            alert("enter email address");
+            return false;
+        }
+        
+    }
+
+        
+        
+
+    </script>
+<br>
+<footer align="center">&copy All Rights Reserved | 2019-2022</footer>
+</html>
